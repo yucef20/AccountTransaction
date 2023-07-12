@@ -37,8 +37,8 @@ public class AccountVO {
     public void printHistoryTransactionsTest() {
         String Header = "DATE_TRANSACTION\t\tTYPE_TRANSACTION\tAMOUNT_MONEY\tBALANCE_OF_ACCOUNT";
         System.out.println(Header);
-        for (TransactionOperation transaction : transactions) {
+        this.transactions.stream().forEach(transaction -> {
             System.out.println( transaction.getDateTransaction() + "\t" +transaction.getTypeTransaction() + "\t" + transaction.getAmount()+"\t" + transaction.getBalanceTotal());
-        }
+        });
     }
 }

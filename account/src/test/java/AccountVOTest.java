@@ -27,7 +27,8 @@ public class AccountVOTest {
     public static final String EXPECTED_HISTORY_TRANSACTIONS = "DATE_TRANSACTION\t\tTYPE_TRANSACTION\tAMOUNT_MONEY\tBALANCE_OF_ACCOUNT\r\n" +
             "2023-07-12\tDEPOSIT\t500.0\t1500.0\r\n" +
             "2023-07-12\tWITH_DRAW\t-400.0\t1100.0\r\n" +
-            "2023-07-12\tDEPOSIT\t600.0\t1700.0";
+            "2023-07-12\tWITH_DRAW\t-300.0\t800.0\r\n" +
+            "2023-07-12\tDEPOSIT\t600.0\t1400.0";
 
 
     @ParameterizedTest
@@ -124,6 +125,7 @@ public class AccountVOTest {
         AccountVO accountVO = new AccountVO(AMOUNT_1000);
         accountVO.depositAmount(AMOUNT_500);
         accountVO.withDrawAmount(AMOUNT_400);
+        accountVO.withDrawAmount(AMOUNT_300);
         accountVO.depositAmount(AMOUNT_600);
 
 
