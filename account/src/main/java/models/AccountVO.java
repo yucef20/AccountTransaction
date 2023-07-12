@@ -1,6 +1,6 @@
 package models;
 
-import enumPackage.TYPE_TRANSACTION;
+import enums.TYPE_TRANSACTION;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class AccountVO {
 
     public AccountVO(double balance) {
         this.balance = balance;
-        this.transactions = new ArrayList<>();
+        this.transactions = new ArrayList<TransactionOperation>();
     }
 
     public double getBalance() {

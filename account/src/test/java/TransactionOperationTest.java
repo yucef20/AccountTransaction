@@ -1,4 +1,4 @@
-import enumPackage.TYPE_TRANSACTION;
+import enums.TYPE_TRANSACTION;
 import models.TransactionOperation;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

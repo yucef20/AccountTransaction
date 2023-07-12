@@ -1,6 +1,6 @@
 package models;
 
-import enumPackage.TYPE_TRANSACTION;
+import enums.TYPE_TRANSACTION;
 
 import java.time.LocalDate;
 

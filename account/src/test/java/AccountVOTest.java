@@ -1,5 +1,5 @@
 import models.AccountVO;
-import enumPackage.TYPE_TRANSACTION;
+import enums.TYPE_TRANSACTION;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
